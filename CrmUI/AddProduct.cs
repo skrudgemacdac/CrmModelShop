@@ -13,15 +13,27 @@ namespace CrmUI
             InitializeComponent();
         }
 
+        public AddProduct(Product product) : this()
+        {
+            Product = product;
+            textBox1.Text = Product.Name;
+            numericUpDown1.Value = Product.Price;
+            numericUpDown2.Value = Product.Count;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            Product = new Product()
-            {
-                Name = textBox1.Text,
-                Price = numericUpDown1.Value,
-                Count = Convert.ToInt32(numericUpDown2.Value)
-            };
+            Product = Product ?? new Product();
+            Product.Name = textBox1.Text;
+            Product.Price = numericUpDown1.Value;
+            Product.Count = Convert.ToInt32(numericUpDown2.Value);
+
             Close();
+        }
+
+        private void AddProduct_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -90,6 +90,11 @@ namespace CrmUI
             // numericUpDown2
             // 
             this.numericUpDown2.Location = new System.Drawing.Point(55, 95);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(160, 20);
             this.numericUpDown2.TabIndex = 5;
@@ -121,6 +126,7 @@ namespace CrmUI
             this.Controls.Add(this.label1);
             this.Name = "AddProduct";
             this.Text = "AddProduct";
+            this.Load += new System.EventHandler(this.AddProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
