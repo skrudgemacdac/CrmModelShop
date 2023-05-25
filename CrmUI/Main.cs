@@ -40,7 +40,7 @@ namespace CrmUI
 
         private void addSellerToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            var form = new AddSeller();
+            var form = new SellerForm();
             if (form.ShowDialog() == DialogResult.OK) 
             {
                 db.Sellers.Add(form.Seller);
@@ -50,7 +50,7 @@ namespace CrmUI
 
         private void addCustomerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var form = new AddCustomer();
+            var form = new CustomerForm();
             if (form.ShowDialog() == DialogResult.OK)
             {
                 db.Customers.Add(form.Customer);
@@ -60,7 +60,7 @@ namespace CrmUI
 
         private void addProductToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var form = new AddProduct();
+            var form = new ProductForm();
             if (form.ShowDialog() == DialogResult.OK) 
             {
                 db.Products.Add(form.Product);

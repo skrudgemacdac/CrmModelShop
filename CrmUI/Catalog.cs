@@ -56,7 +56,7 @@ namespace CrmUI
                 var product = set.Find(id) as Product;
                 if (product != null)
                 {
-                    var form = new AddProduct(product);
+                    var form = new ProductForm(product);
                     if (form.ShowDialog() == DialogResult.OK)
                     {
                         product = form.Product;
@@ -71,7 +71,7 @@ namespace CrmUI
                 var seller = set.Find(id) as Seller;
                 if (seller != null) 
                 {
-                    var form = new AddSeller(seller);
+                    var form = new SellerForm(seller);
                     if (form.ShowDialog() == DialogResult.OK) 
                     {
                         seller = form.Seller;
@@ -86,7 +86,7 @@ namespace CrmUI
                 var customer = set.Find(id) as Customer;
                 if (customer != null)
                 {
-                    var form = new AddCustomer(customer);
+                    var form = new CustomerForm(customer);
                     if (form.ShowDialog() == DialogResult.OK)
                     {
                         customer = form.Customer;

@@ -4,16 +4,16 @@ using System.Windows.Forms;
 
 namespace CrmUI
 {
-    public partial class AddCustomer : Form
+    public partial class CustomerForm : Form
     {
         public Customer Customer { get; set; }
 
-        public AddCustomer()
+        public CustomerForm()
         {
             InitializeComponent();
         }
 
-        public AddCustomer(Customer customer) : this() 
+        public CustomerForm(Customer customer) : this() 
         {
             Customer = customer;
             textBox1.Text = Customer.Name;

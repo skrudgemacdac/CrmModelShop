@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cart.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Check.cs" />
     <Compile Include="Models\CrmContext.cs" />

@@ -1,7 +1,7 @@
 ﻿
 namespace CrmUI
 {
-    partial class AddProduct
+    partial class ProductForm
     {
         /// <summary>
         /// Required designer variable.
