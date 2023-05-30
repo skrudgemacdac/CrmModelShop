@@ -39,13 +39,15 @@ namespace CrmUI
             this.addSellerToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.CheckToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addCheckToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.modelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.EntitiesToolStripMenuItem});
+            this.EntitiesToolStripMenuItem,
+            this.modelToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -75,7 +77,7 @@ namespace CrmUI
             // addProductToolStripMenuItem
             // 
             this.addProductToolStripMenuItem.Name = "addProductToolStripMenuItem";
-            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.addProductToolStripMenuItem.Text = "Add";
             this.addProductToolStripMenuItem.Click += new System.EventHandler(this.addProductToolStripMenuItem_Click);
             // 
@@ -91,7 +93,7 @@ namespace CrmUI
             // addCustomerToolStripMenuItem
             // 
             this.addCustomerToolStripMenuItem.Name = "addCustomerToolStripMenuItem";
-            this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.addCustomerToolStripMenuItem.Text = "Add";
             this.addCustomerToolStripMenuItem.Click += new System.EventHandler(this.addCustomerToolStripMenuItem_Click);
             // 
@@ -107,7 +109,7 @@ namespace CrmUI
             // addSellerToolStripMenuItem2
             // 
             this.addSellerToolStripMenuItem2.Name = "addSellerToolStripMenuItem2";
-            this.addSellerToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.addSellerToolStripMenuItem2.Size = new System.Drawing.Size(96, 22);
             this.addSellerToolStripMenuItem2.Text = "Add";
             this.addSellerToolStripMenuItem2.Click += new System.EventHandler(this.addSellerToolStripMenuItem2_Click);
             // 
@@ -123,8 +125,15 @@ namespace CrmUI
             // addCheckToolStripMenuItem3
             // 
             this.addCheckToolStripMenuItem3.Name = "addCheckToolStripMenuItem3";
-            this.addCheckToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.addCheckToolStripMenuItem3.Size = new System.Drawing.Size(96, 22);
             this.addCheckToolStripMenuItem3.Text = "Add";
+            // 
+            // modelToolStripMenuItem
+            // 
+            this.modelToolStripMenuItem.Name = "modelToolStripMenuItem";
+            this.modelToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.modelToolStripMenuItem.Text = "Model";
+            this.modelToolStripMenuItem.Click += new System.EventHandler(this.modelToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -135,6 +144,7 @@ namespace CrmUI
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -154,6 +164,7 @@ namespace CrmUI
         private System.Windows.Forms.ToolStripMenuItem addSellerToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem addCheckToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem addCustomerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modelToolStripMenuItem;
     }
 }
 

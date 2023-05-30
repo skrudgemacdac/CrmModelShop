@@ -19,6 +19,7 @@ namespace CrmUI
             textBox1.Text = Customer.Name;
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             Customer = Customer ?? new Customer();

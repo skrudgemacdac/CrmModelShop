@@ -1,5 +1,4 @@
-﻿
-namespace CrmBL.Models
+﻿namespace CrmBL.Models
 {
     public class Sell
     {

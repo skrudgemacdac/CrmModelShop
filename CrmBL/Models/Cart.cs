@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace CrmBL
 {
-    class Cart : IEnumerable
+    public class Cart : IEnumerable
     {
         public Customer Customer { get; set; }
         public Dictionary<Product, int> Products { get; set; }

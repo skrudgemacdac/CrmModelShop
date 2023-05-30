@@ -51,19 +51,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cart.cs" />
+    <Compile Include="Migrations\202305302321039_31.05.2023.cs" />
+    <Compile Include="Migrations\202305302321039_31.05.2023.designer.cs">
+      <DependentUpon>202305302321039_31.05.2023.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Cart.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\CashDesk.cs" />
     <Compile Include="Models\Check.cs" />
     <Compile Include="Models\CrmContext.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Generator.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Sell.cs" />
     <Compile Include="Models\Seller.cs" />
+    <Compile Include="Models\ShopComputerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202305302321039_31.05.2023.resx">
+      <DependentUpon>202305302321039_31.05.2023.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

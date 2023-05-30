@@ -7,12 +7,11 @@ namespace CrmBL.Models
     public class Check
     {
         public int CheckId { get; set; }
-
         public int SellerId { get; set; }
         public Seller Seller { get; set; }
-
         public int CustomerId { get; set; }
         public Customer Customer { get; set; }
+        public decimal Price { get; set; }
 
         public ICollection<Sell> Sells { get; set; }
 
