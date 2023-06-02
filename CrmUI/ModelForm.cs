@@ -38,7 +38,23 @@ namespace CrmUI
 
         private void ModelForm_Load(object sender, EventArgs e)
         {
+            numericUpDown1.Value = model.CustomerSpeed;
+            numericUpDown2.Value = model.CashDeskSpeed;
+        }
 
+        private void ModelForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            model.Stop();
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            model.CustomerSpeed = (int)numericUpDown1.Value;
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+            model.CashDeskSpeed = (int)numericUpDown2.Value;
         }
     }
 }

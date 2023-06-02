@@ -110,7 +110,7 @@ namespace CrmBL.Models
 
         public override string ToString()
         {
-            return $"Register №{Number}";
+            return $"Cash №{Number + 1}";
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using CrmBL.Models;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CrmBL
 {
@@ -8,6 +9,8 @@ namespace CrmBL
     {
         public Customer Customer { get; set; }
         public Dictionary<Product, int> Products { get; set; }
+
+        public decimal Price => GetAll().Sum(p => p.Price);
 
         public Cart(Customer customer) 
         {
@@ -36,6 +39,16 @@ namespace CrmBL
                     yield return product;
                 }
             }
+        }
+
+        public List<Product> GetAll()
+        {
+            var result = new List<Product>();
+            foreach (Product i in this)
+            {
+                result.Add(i);
+            }
+            return result;
         }
     }
 }
